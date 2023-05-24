@@ -37,8 +37,7 @@ public class FornecedorService {
                 throw new IllegalArgumentException("Data de Nascimento deve ser informado para fornecedor pessoa física.");
             }
             if(cep.getBody().getUf().equals("PR")) {
-                // if(fornecedor.getDataNascimento().after(new Date()))) {
-                //     1991-03-16 > 2005-05-23 - 18
+                // validar menor de idade
                     throw new IllegalArgumentException("O fornecedor deve ser maior de idade para ser cadastrado."); 
                 // }
             }
